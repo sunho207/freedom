@@ -1,0 +1,119 @@
+.fullscreen-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.block {
+    height: 100vh;
+    z-index: -100;
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('/images/freedombg.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+.logo {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.intro-text {
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.row {
+    width: 100%;
+}
+
+.the-purpose {
+    padding: 75px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    .youtube-player {
+        margin-top: 50px;
+        margin-bottom: -180px;
+        width: 50vw;
+        height: 28vw;
+    }
+    p {
+        font-size: 16px !important;
+        opacity: 0.8;
+    }
+    hr {
+        width: 40px;
+        color: black;
+    }
+}
+
+.home-blog {
+    background-color: #131313;
+    text-align: center;
+    padding-top: 250px;
+    .row {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    button {
+        margin-top: 25px;
+        margin-bottom: 100px;
+    }
+    h3 {
+        letter-spacing: 2px;
+        opacity: 0.9;
+        margin-bottom: 50px;
+    }
+    h5 {
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h6 {
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: 100;
+        opacity: 0.9;
+    }
+}
